@@ -3,25 +3,24 @@ defmodule Car do
     
     Copyright © 2018 Edwin Buehler. All rights reserved.
     """
-    require Logger
-
-    
     @doc """
-    Die Variablen
+    A simple struct.
     """
     defstruct name: String,
         color: :white,
         color_doors: :white
 
     @doc """
-    Creates a new car
+    Creates a new car without the builder.
     """
     def new(name) do
         %Car{name: name}
     end
 
-    def is_transformer?(%{__struct__: struct_name} = car)  do
-        IO.puts inspect(struct_name)
+    @doc """
+    A car or a transformer? Not builder related.
+    """
+    def is_transformer?(%{__struct__: struct_name})  do
         case struct_name do
             TransformerCar ->
                 true

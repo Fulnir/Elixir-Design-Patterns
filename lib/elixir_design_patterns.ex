@@ -3,16 +3,4 @@ defmodule ElixirDesignPatterns do
   Documentation for ElixirDesignPatterns.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ElixirDesignPatterns.hello
-      :world
-
-  """
-  def hello do
-    :world
-  end
 end

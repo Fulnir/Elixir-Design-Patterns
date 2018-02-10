@@ -1,9 +1,12 @@
 defmodule CarDirector do
+    @moduledoc """
+    
+    Copyright © 2018 Edwin Buehler. All rights reserved.
+    """
     import CarBuilder
 
     def construct(), do: construct("")
-    def construct(name) do
-        car = 
+    def construct(name) do 
         case name do
             "Blues Mobil" ->
                 CarBuilder.build()

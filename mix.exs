@@ -15,8 +15,7 @@ defmodule ElixirDesignPatterns.MixProject do
         "coveralls.detail": :test,
         "coveralls.post": :test,
         "coveralls.html": :test,
-        "coveralls.json": :test,
-        "coveralls.circle": :test
+        "coveralls.json": :test
       ],
       deps: deps(),
       # Docs
@@ -47,14 +46,14 @@ defmodule ElixirDesignPatterns.MixProject do
   end
   defp description do
     """
-    A simple http based database wrapper for dgraph.
+    Elixir Design Pattern
     """
   end
 
   defp package do
     # These are the default files included in the package
     [
-      name: :dgraph_ex,
+      name: :elixir_design_pattern,
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["Edwin Bühler"],
       licenses: ["MIT"],

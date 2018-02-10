@@ -1,8 +1,8 @@
-defmodule ElixirDesignPatternsTest do
+defmodule BuilderTest do
   use ExUnit.Case
   import Car
   import CarBuilder
-  import CarDirector
+  
 
   # doctest ElixirDesignPatterns
   describe "Builder" do

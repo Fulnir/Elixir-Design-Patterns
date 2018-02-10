@@ -1,5 +1,8 @@
 defmodule CarBuilder do
-  
+  @moduledoc """
+    
+  Copyright © 2018 Edwin Buehler. All rights reserved.
+  """
   def build, do: %Car{}
 
   def name(car, name), do: %{car | name: name}

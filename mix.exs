@@ -5,7 +5,7 @@ defmodule ElixirDesignPatterns.MixProject do
     [
       app: :elixir_design_pattern,
       version: "0.1.0",
-      elixir: "~> 1.6",
+      elixir: "~> 1.5",
       start_permanent: Mix.env() == :prod,
       package: package(),
       description: description(),

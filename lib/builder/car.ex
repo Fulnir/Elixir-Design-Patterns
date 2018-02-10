@@ -5,6 +5,10 @@ defmodule Car do
     """
     @doc """
     A simple struct.
+
+        iex> %Car{name: "Blue Ocean", color: :blue, color_doors: :cyan}
+        %Car{name: "Blue Ocean", color: :blue, color_doors: :cyan}
+
     """
     defstruct name: String,
         color: :white,

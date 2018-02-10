@@ -2,9 +2,9 @@ defmodule BuilderTest do
   use ExUnit.Case
   import Car
   import CarBuilder
-  
 
-  # doctest ElixirDesignPatterns
+  doctest Car
+
   describe "Builder" do
     test "Direct creating a car" do
       car = Car.new("Blues Mobil")

@@ -5,7 +5,7 @@ defmodule ElixirDesignPatternsTest do
   import CarDirector
 
   # doctest ElixirDesignPatterns
-  describe "👷 Builder" do
+  describe "Builder" do
     test "Direct creating a car" do
       car = Car.new("Blues Mobil")
       assert "Blues Mobil" == car.name

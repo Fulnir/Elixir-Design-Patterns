@@ -5,8 +5,8 @@ defmodule CarDirector do
     """
     import CarBuilder
 
-    def construct(), do: construct("")
-    def construct(name) do 
+    def construct, do: construct("")
+    def construct(name) do
         case name do
             "Blues Mobil" ->
                 CarBuilder.build()

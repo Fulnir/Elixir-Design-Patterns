@@ -1,9 +1,11 @@
 # Elixir Design Patterns
-[![Build Status](https://semaphoreci.com/api/v1/fulnir/elixir_design_pattern/branches/master/shields_badge.svg)](https://semaphoreci.com/fulnir/elixir_design_pattern) [![codecov](https://codecov.io/bb/fulnir/dexgraph/branch/master/graph/badge.svg)](https://codecov.io/bb/fulnir/elixir_design_pattern) [![Ebert](https://ebertapp.io/github/Fulnir/Elixir_Design_Pattern.svg)](https://ebertapp.io/github/Fulnir/Elixir_Design_Pattern) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
+[![Build Status](https://semaphoreci.com/api/v1/fulnir/elixir_design_patterns/branches/master/shields_badge.svg)](https://semaphoreci.com/fulnir/elixir_design_patterns) [![codecov](https://codecov.io/bb/fulnir/elixir_design_patterns/branch/master/graph/badge.svg)](https://codecov.io/bb/fulnir/elixir_design_patterns) [![Ebert](https://ebertapp.io/github/Fulnir/Elixir_Design_Pattern.svg)](https://ebertapp.io/github/Fulnir/Elixir_Design_Pattern) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 
-# Creational patterns
+###  🚧
 
-## Builder
+## Creational patterns
+
+### Builder
 
 See [https://en.wikipedia.org/wiki/Builder_pattern](https://en.wikipedia.org/wiki/Builder_pattern)
 
@@ -29,10 +31,11 @@ car = CarDirector.construct("Blues Mobil")
 
 [Builder Test](test/builder_test.ex)
 
-## Singleton
+### Singleton
 
 This is useful when exactly one object is needed to coordinate actions across the system. 
 
 See [https://en.wikipedia.org/wiki/Singleton_pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+
 # 🚧
 

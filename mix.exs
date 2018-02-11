@@ -3,7 +3,7 @@ defmodule ElixirDesignPatterns.MixProject do
 
   def project do
     [
-      app: :elixir_design_pattern,
+      app: :elixir_design_patterns,
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env() == :prod,
@@ -57,17 +57,17 @@ defmodule ElixirDesignPatterns.MixProject do
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["Edwin Bühler"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/Fulnir/elixir_design_pattern"}
+      links: %{"GitHub" => "https://github.com/Fulnir/elixir-design-patterns"}
     ]
   end
 
   defp docs do
     [
-      name: "ElixirDesignPatterns",
+      name: "Elixir Design Patterns",
       main: "README",
       formatters: ["html", "epub"],
-      source_url: "https://github.com/Fulnir/elixir_design_pattern",
-      homepage_url: "https://github.com/Fulnir/elixir_design_pattern",
+      source_url: "https://github.com/Fulnir/elixir-design-patterns",
+      homepage_url: "https://github.com/Fulnir/elixir-design-patterns",
       extras: [
         "README.md"
       ]

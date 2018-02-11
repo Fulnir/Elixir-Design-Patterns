@@ -5,8 +5,6 @@ defmodule Singleton do
   """
   use GenServer
 
-  @initial_value "starting value"
-
   @doc """
   Start the Server
   """

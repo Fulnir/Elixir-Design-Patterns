@@ -5,7 +5,6 @@ defmodule TransformerCar do
     """
     require Logger
 
-    
     @doc """
     Die Variablen
     """
@@ -20,5 +19,4 @@ defmodule TransformerCar do
         %TransformerCar{name: name}
     end
 
-    
 end

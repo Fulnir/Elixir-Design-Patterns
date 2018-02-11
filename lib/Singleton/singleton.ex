@@ -1,20 +1,23 @@
 defmodule Singleton do
   @moduledoc """
     
-  Copyright © 2018 Edwin Buehler. All rights reserved.
+  
   """
   use GenServer
-
+  require Logger
   @doc """
   Start the Server
   """
   def start_link(struct_name) do
-    GenServer.start_link(__MODULE__, :no_instance, name: struct_name)
+    case GenServer.start_link(__MODULE__, :no_instance, name: struct_name) do
+      {:ok, pid} ->
+        Logger.info "---- #{__MODULE__} worker started for #{struct_name}"
+        {:ok, pid}
+      {:error, {:already_started, pid}} ->
+        Logger.info "---- #{__MODULE__} worker already running for #{struct_name}"
+        {:error, {:already_started, pid}}
+    end
   end
-
-#   def init(:ok) do
-#     {:ok, []}
-#   end
 
   def value(struct_name),
     do: GenServer.call(struct_name, :read)

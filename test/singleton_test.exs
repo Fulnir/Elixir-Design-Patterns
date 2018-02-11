@@ -1,7 +1,6 @@
 defmodule SingletonTest do
   @moduledoc """
   
-  Copyright © 2018 Edwin Buehler. All rights reserved.
   """
   use ExUnit.Case
 

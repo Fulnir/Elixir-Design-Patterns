@@ -1,7 +1,6 @@
 defmodule SingletonStructSample do
     @moduledoc """
     
-    Copyright © 2018 Edwin Buehler. All rights reserved.
     """
 
     defstruct name: String
@@ -25,7 +24,7 @@ defmodule SingletonStructSample do
     Creating an instance of the given struct but only if there no other.
     In that case, the available struct will be returned.
     """
-    defp singleton(struct) do
+    def singleton(struct) do
         case Singleton.start_link(SingletonStructSample) do
             {:error, {:already_started, pid}} ->
                 old_struct = Singleton.value(SingletonStructSample)

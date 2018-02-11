@@ -1,6 +1,6 @@
 defmodule Singleton do
   @moduledoc """
-    
+  A GenServer stores the singleton instance.
   
   """
   use GenServer

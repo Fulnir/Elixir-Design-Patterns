@@ -1,6 +1,10 @@
 defmodule SingletonTest do
   @moduledoc """
-  
+  Singleton tests.
+
+  - with default value
+  - with given struct
+  - with updated struct
   """
   use ExUnit.Case
 

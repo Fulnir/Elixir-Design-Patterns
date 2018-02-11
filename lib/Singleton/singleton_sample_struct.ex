@@ -1,6 +1,21 @@
 defmodule SingletonStructSample do
     @moduledoc """
     
+    SingletonStructSample with default value.
+    ```
+    singleton = SingletonStructSample.new()
+    ```
+
+    SingletonStructSample with geven value.
+    ```
+    singleton = SingletonStructSample.new("A_Singleton")
+    ```
+
+    Available SingletonStructSample instance update.
+    ```
+    singleton = SingletonStructSample.update("Updated_Singleton")
+    ```
+
     """
 
     defstruct name: String
